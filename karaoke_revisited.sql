@@ -147,5 +147,5 @@ SELECT * FROM customers WHERE room_id = 4 ORDER BY name;
 SELECT size, entry_fee FROM rooms;
 
 -- Many to Many querying
-SELECT name, genre FROM songs, playlists, songs_and_playlists_relationships
+SELECT name, genre, room_id FROM songs, playlists, songs_and_playlists_relationships
   WHERE song_id = songs.id AND playlist_id = playlists.id;
